@@ -1,14 +1,27 @@
 <template>
-  <div id="home">
+  <div id="home">  
+    <nav-bar>購物車</nav-bar>
+    <router-view/> 
     <div>
-      this is home page
+      dddd
     </div>
+    <Main/>
   </div>
 </template>
 
 <script>
+import NavBar from '../navbar/NavBar'
+import Main from '../Main'
 
 export default {
+  name:'Home',
+  components: {
+    Main,
+    NavBar 
+  }
+  
+  
+  
  
 }
 </script>
