@@ -2,11 +2,18 @@ import Vue from 'vue'
 import App from './App'
 import VueRouter from 'vue-router'
 import Mint from 'mint-ui'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+ 
+
+
 import Home from './components/views/Home.vue'
 import Cart from './components/views/Cart.vue'
 
 
 Vue.use(Mint)
+Vue.use(VueAwesomeSwiper)
+
 Vue.use(VueRouter)//this is very important
 Vue.config.productionTip = false
 const routes = [

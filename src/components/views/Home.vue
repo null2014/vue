@@ -3,16 +3,15 @@
     <nav-bar slot="center">購物車</nav-bar>
     <!-- <router-view/>  -->
     <div class="home-view">
-    <!-- <swpier><img src="~assets/img/home.png" alt=""/>
-    </swpier> -->
-    <img src="~assets/img/home.png" alt=""/>
+      <my-swiper></my-swiper>
+      <img src="~assets/img/home.png" alt=""/>
+    </div>   
     <tab-control :title="title"></tab-control>
-    </div>
-   
   </div>
 </template>
 
 <script>
+import MySwiper from '../swiper/Swiper'
 import NavBar from '../navbar/NavBar'
 import TabControl from '../tabControl/TabControl'
 
@@ -24,6 +23,7 @@ export default {
     }
   },
   components: {
+    MySwiper,
     NavBar,
     TabControl
   }
