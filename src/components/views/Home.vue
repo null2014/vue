@@ -1,23 +1,31 @@
 <template>
   <div id="home">  
-    <nav-bar>購物車</nav-bar>
-    <router-view/> 
-    <div>
-      dddd
+    <nav-bar slot="center">購物車</nav-bar>
+    <!-- <router-view/>  -->
+    <div class="home-view">
+    <!-- <swpier><img src="~assets/img/home.png" alt=""/>
+    </swpier> -->
+    <img src="~assets/img/home.png" alt=""/>
+    <tab-control :title="title"></tab-control>
     </div>
-    <Main/>
+   
   </div>
 </template>
 
 <script>
 import NavBar from '../navbar/NavBar'
-import Main from '../Main'
+import TabControl from '../tabControl/TabControl'
 
 export default {
   name:'Home',
+  data(){
+    return{
+    title:['經典','爆款','流行']
+    }
+  },
   components: {
-    Main,
-    NavBar 
+    NavBar,
+    TabControl
   }
   
   
@@ -28,6 +36,10 @@ export default {
 
 
 <style scoped>
+.home-view img{
+  height: 100%;
+  width:100%;
+}
 
 
 

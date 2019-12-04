@@ -25,13 +25,13 @@ export default {
 }
 .left, .right{
   width: 60px;
-  background-color: blue;
+  background-color:#FFC0CB;
   
 }
 .center{
   flex:1;
-  background-color:red;
-  color: white;
+  background-color:#FFC0CB;
+  color:white;
   
 }
 

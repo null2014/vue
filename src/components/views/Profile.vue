@@ -1,8 +1,6 @@
 <template>
-  <div id="setting">  
-    <div>
-       <el-avatar src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"></el-avatar>
-    </div>
+  <div class="profile">  
+    
     <Main></main>
   </div>
 </template>
@@ -12,7 +10,7 @@
 import Main from './components/Main'
 
 export default {
-  name: 'Setting',
+  name: 'Profile',
   components: {
     Main,
    
