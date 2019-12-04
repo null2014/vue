@@ -23,13 +23,14 @@ export default {
   },
   data(){
       return{
-        currentIndex:0
+        currentIndex:0,
+        
       }
     },
   methods:{
     tabClick(index){
       console.log(index)
-      this.currentIndex=this.index
+      this.currentIndex=index
     }
   }
 }
@@ -42,6 +43,8 @@ export default {
   text-align: center;
   font-size: 18px;
   background-color: #ffffff;
+  position: sticky;
+  top:44px;
 }
 .tab-control-item{
   flex:1;
@@ -50,8 +53,7 @@ export default {
 }
 .active{
   color:red;
-  
-  
+    
 }
 .active span{
 border-bottom: 3px solid red

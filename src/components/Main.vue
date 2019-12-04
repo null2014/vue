@@ -22,7 +22,7 @@
       <div slot="item-text" style="font-size:14px">我的訂單</div>
     </tab-bar-item>
     <tab-bar-item class="tab-bar-item" activeColor="#d81e06">
-      <img rc="~assets/img/我的.png" alt="" slot="item-icon"/>
+      <img src="~assets/img/我的.png" alt="" slot="item-icon"/>
       <img src="~assets/img/我的_active.png" alt="" slot="item-icon-active"/>
       <div slot="item-text">我的</div>
     </tab-bar-item>
