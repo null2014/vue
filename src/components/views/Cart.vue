@@ -1,11 +1,7 @@
 <template>
   <div id="cart">  
-    <nav-bar slot="center">購物車</nav-bar>
+   <nav-bar><slot slot="center">購物車</slot></nav-bar>
     
-    
-   
-    
-    <Main/>
   </div>
   
 </template>

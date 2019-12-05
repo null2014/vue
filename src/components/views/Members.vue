@@ -1,16 +1,16 @@
 <template>
-  <div class="profile">  
-    <nav-bar><slot slot="center">我的</slot></nav-bar>
-    
+  <div class="members">  
+    <nav-bar><slot slot="center">會員</slot></nav-bar>
+    This is members' page
   </div>
 </template>
 
 <script>
 import NavBar from '../navbar/NavBar'
 export default {
-  name: 'Profile',
+  name: 'Members',
   components: { 
-     NavBar
+    NavBar
   }
 }
 </script>

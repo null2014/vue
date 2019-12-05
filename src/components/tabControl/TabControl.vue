@@ -45,6 +45,7 @@ export default {
   background-color: #ffffff;
   position: sticky;
   top:44px;
+  margin-top: 4px;
 }
 .tab-control-item{
   flex:1;

@@ -25,12 +25,12 @@ export default {
 }
 .left, .right{
   width: 60px;
-  background-color:#FFC0CB;
+  background-color:#d81e06;
   
 }
 .center{
   flex:1;
-  background-color:#FFC0CB;
+  background-color:#d81e00;
   color:white;
   
 }
