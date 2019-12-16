@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Mint from 'mint-ui'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
+
  
 
 
@@ -18,11 +19,12 @@ import Detail from './components/views/Detail.vue'
 Vue.use(Mint)
 Vue.use(VueAwesomeSwiper)
 
+
 Vue.use(VueRouter)//this is very important
 Vue.config.productionTip = false
 const routes = [
   {
-    path: '/', component:Home,
+    path: '/', redirect:'/home',
      
   },
   {

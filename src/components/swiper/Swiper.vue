@@ -1,9 +1,15 @@
 <template>
     <div class="my-swiper">
-    <swiper :optops="swiperOption" class="swiper-menu">
+    <!-- <swiper :optops="swiperOption" class="swiper-menu">
       <swiper-slide><img src="~assets/img/home.png" alt=""/></swiper-slide>
       <swiper-slide><img src="~assets/img/home_1.png" alt=""/></swiper-slide>
       <swiper-slide><img src="~assets/img/home_3.png" alt=""/></swiper-slide>
+      <div class="swiper-scrollbar" slot="scrollbar"></div>
+    </swiper> -->
+    <swiper>
+      <swiper-slide><slot></slot></swiper-slide>
+      <swiper-slide><slot></slot></swiper-slide>
+      <swiper-slide><slot></slot></swiper-slide>
       <div class="swiper-scrollbar" slot="scrollbar"></div>
     </swiper>
     </div>
@@ -18,9 +24,9 @@ export default {
   name:'MySwiper',
   data(){
     return{
-      swiperOption:{
-        loop:true
-      }
+      // swiperOption:{
+      //   loop:true
+      // }
     }
   }
   
@@ -28,20 +34,18 @@ export default {
 </script>
 
 <style>
-    .my-swiper {
+    /* .my-swiper {
       width: 100%;
       height: 100%;
-    }
-    .swiper-slide img{
+    } */
+    /* .swiper-slide img{
+      overflow: hidden;
       width: 100%;
       height: 100%;;
       text-align: center;
       font-size: 18px;
       background: #fff;
-      /* Center slide text vertically */
-      /* display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex; */
+
       display: flex;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -54,6 +58,6 @@ export default {
       padding: 3px;
       border-bottom: 1px solid #ffffff
 
-    }
+    } */
 
 </style>
